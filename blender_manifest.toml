@@ -1,0 +1,11 @@
+schema_version = "1.0.0"
+id = "blender_lottie_exporter"
+version = "1.0.0"
+name = "Blender Lottie Exporter"
+tagline = "Supports exporting Grease Pencil as Lottie"
+maintainer = "Luo Zhihao <luo_zhihao@outlook.com>"
+type = "add-on"
+website = "https://github.com/beicause/blender_lottie_exporter"
+tags = ["Import-Export", "Sequencer"]
+blender_version_min = "4.5.0"
+license = ["SPDX:GPL-3.0-or-later"]
