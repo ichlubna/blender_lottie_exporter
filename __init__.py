@@ -25,10 +25,9 @@ def write_seq(filepath: str, frame_start, frame_end, opt: bool, scene: bpy.types
     for i in range(frame_start, frame_end + 1):
         scene.frame_set(i)
         path = f"{filepath}_seq_dir/{str(i)}.svg"
-        bpy.ops.wm.gpencil_export_svg(
+        bpy.ops.wm.grease_pencil_export_svg(
             filepath=path,
             use_fill=True,
-            use_normalized_thickness=False,
             use_clip_camera=True,
         )
         with open(path, "r+") as f:
