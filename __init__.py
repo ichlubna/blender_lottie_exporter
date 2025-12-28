@@ -28,6 +28,9 @@ def write_seq(filepath: str, frame_start, frame_end, opt: bool, scene: bpy.types
         bpy.ops.wm.grease_pencil_export_svg(
             filepath=path,
             use_fill=True,
+            selected_object_type='VISIBLE',
+            frame_mode='SCENE',
+            use_uniform_width=True,
             use_clip_camera=True,
         )
         with open(path, "r+") as f:
